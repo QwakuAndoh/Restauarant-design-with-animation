@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: auto;
+    height: auto;
+    display:flex;
+    padding:20px;
+    width: auto;
+    height: auto;
+    animation-name: andoh;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-delay: 1s;
+
+}
+
+.menulist{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction:row;
+    margin-left: 10px;
+    margin-top:20px;
+    margin-right: 20px;
+}
+body{
+    box-shadow: rgba(0,0,0,0.2);
+}
+input~p{
+    padding:10px 20px;
+}
+.contained{
+    width: auto;
+    height: auto;
+    display:flex;
+    padding:20px;
+    
+}
+
+
+@keyframes andoh {
+    0%{
+        background-image: url(./pexels-photo-11111603.jpeg);
+        background-position: cover;
+        translate:transform(10px 20px);
+    }
+    25%{
+        background-image: url(./mae-mu-I7A_pHLcQK8-unsplash.jpg);
+        background-position: cover;
+        transition: transform(10px 20px);
+    }
+    50%{
+        background-image: url(./ilya-mashkov-_qxbJUr9RqI-unsplash.jpg);
+        background-position: cover;
+        transition: transform(10px 20px);
+    }
+    75%{
+        background-image: url(./pexels-photo-2725744.jpeg);
+        background-position: cover;
+        transition: transform(10px 20px);
+    }
+    100%{
+        background-image: url(./amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg);
+        background-position: cover;
+        transition: transform(10px 20px);
+    }
+    
+}
+
+span{
+    color:wheat;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav li{
+    float:left;
+    padding:20px 10px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav ul li ul{
+    display: none;
+
+
+}
+.nav ul li:hover >ul{
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+    list-style-type: style;
+
+}
+
+.text{
+    text-align: center;
+    padding:20px;
+}
+button{
+    display:flex;
+}
+
+
+img{
+    width: 473px;
+    height: 473px;
+    justify-content: space-between;
+    padding:20px 10px;
+    border-radius: 70px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    
+}
+
+img ~p{
+    text-align: center;
+}
+nav ul li ul {
+    display: none;
+    position:absolute;
+
+
+
+}
+nav ul li:hover >ul{
+
+    display: block;
+
+}
